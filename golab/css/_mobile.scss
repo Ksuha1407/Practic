@@ -1,0 +1,53 @@
+$laptop: 1200px;
+// планшеты в книжной ориентации:
+$tablet-b: 991.98px;
+// планшеты и смартфоны в горизонтальной ориентации:
+$tablet: 767.98px;
+// большие экраны смартфонов:
+$mobile: 479.98px;
+// малые экраны смартфонов:
+$mobile-s: 392.98px;
+
+@mixin laptop {
+    @media (max-width: $laptop) {
+        @content;
+    }
+}
+
+@mixin tablet-b {
+    @media (max-width: $tablet-b) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mobile-s {
+    @media (max-width: $mobile-s) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            @content;
+        }
+    }
+}
