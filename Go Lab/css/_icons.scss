@@ -1,0 +1,33 @@
+.icons {
+
+    margin-bottom: 8rem;
+
+    @include mobile {
+        margin-bottom: 6rem;
+    }
+
+    // .icons__content
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 0.2fr));
+        gap: 1.25rem;
+
+        @include mobile {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    // .icons__item
+
+    &__item {
+        max-width: 12.5rem;
+        aspect-ratio: 200 / 53;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+
+    }
+}

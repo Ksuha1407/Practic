@@ -1,0 +1,85 @@
+.agency {
+    margin-bottom: 5.5rem;
+
+    @include mobile {
+        margin-bottom: 5rem;
+    }
+
+    // .agency__content
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 7.75rem;
+
+        @include tablet {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+        }
+    }
+
+    // .agency__blok
+
+    &__blok {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 2rem;
+    }
+
+    // .agency__link
+
+    &__link {
+        color: #1A7BFF;
+    }
+
+    // .agency__title
+
+    &__title {
+        max-width: 23.125rem;
+        font-size: 2rem;
+        font-weight: 700;
+
+        @include mobile {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
+
+    // .agency__button
+
+    &__button {
+        display: flex;
+        max-width: 18.125rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .agency__btn
+
+    &__btn {
+        @include button;
+    }
+
+    // .agency__img
+
+    &__img {
+        max-width: 1.75rem;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+
+    // .agency__image
+
+    &__image {
+        max-width: 45.25rem;
+        flex-shrink: 0;
+        aspect-ratio: 724 / 582;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
