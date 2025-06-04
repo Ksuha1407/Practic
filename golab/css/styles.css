@@ -100,8 +100,7 @@ html {
 .header__logo {
   max-width: 7.18rem;
   aspect-ratio: 115/29;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -219,15 +218,13 @@ html {
 .agency__img {
   max-width: 1.75rem;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .agency__image {
   max-width: 45.25rem;
   flex-shrink: 0;
   aspect-ratio: 724/582;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -254,8 +251,7 @@ html {
 .icons__item {
   max-width: 12.5rem;
   aspect-ratio: 200/53;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -345,8 +341,7 @@ html {
 .perfect__image img {
   max-width: 3.125rem;
   aspect-ratio: 50/50;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .perfect__main {
   display: flex;
@@ -393,8 +388,7 @@ html {
 .perfect__image--white img {
   max-width: 3.125rem;
   aspect-ratio: 50/50;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .help {
@@ -445,8 +439,7 @@ html {
 .help__image {
   max-width: 47.5rem;
   aspect-ratio: 760/469;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .specialist {
@@ -556,8 +549,7 @@ html {
 .specialist__img img {
   max-width: 2.68rem;
   aspect-ratio: 43/44;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .specialist__description {
   display: flex;
@@ -579,7 +571,6 @@ html {
 }
 .specialist__image {
   display: flex;
-  max-width: 26, 25rem;
   transform: rotate(5.24deg);
   flex-direction: column;
   align-items: center;
@@ -591,8 +582,7 @@ html {
   max-width: 26.25rem;
   aspect-ratio: 420/563;
   border-radius: 0.9375rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -633,8 +623,7 @@ html {
   max-width: 55.9375rem;
   flex-shrink: 0;
   aspect-ratio: 895/557;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -842,8 +831,7 @@ html {
 .ready__image {
   max-width: 35.5rem;
   aspect-ratio: 568/454;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
