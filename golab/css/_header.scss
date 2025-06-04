@@ -1,0 +1,101 @@
+.header {
+    margin-bottom: 4.25rem;
+
+    @include mobile {
+        margin-bottom: 3.25rem;
+    }
+
+    // .header__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.657rem 0.75rem;
+        gap: 10px;
+
+        @include mobile-s {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+        max-width: 7.18rem;
+        aspect-ratio: 115 / 29;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        @include mobile-s {
+            text-align: center;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+        transition: all 0.3s ease;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2.5rem;
+
+            @include tablet-b {
+                gap: 0.625rem;
+            }
+
+            @include tablet {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        :hover {
+            text-decoration: underline;
+        }
+
+
+    }
+
+    // .header__button
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+
+        @include tablet {
+            flex-flow: row wrap;
+        }
+
+        @include mobile-s {
+            gap: 1.875rem;
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        text-wrap: nowrap;
+    }
+
+    // .header__link--color
+
+    &__link--color {
+        max-width: 6.68rem;
+        text-wrap: nowrap;
+        padding: 0.625rem 2rem;
+        border-radius: 0.23rem;
+        color: #FFF;
+        background: #1A7BFF;
+    }
+
+}

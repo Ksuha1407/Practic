@@ -1,0 +1,43 @@
+.reviews {
+    margin-bottom: 3.375rem;
+
+
+    // .reviews__content
+
+    &__content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 7.5rem;
+
+        @include mobile {
+            gap: 2rem;
+        }
+    }
+
+    // .reviews__title
+
+    &__title {
+        @include title;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    // .reviews__image
+
+    &__image {
+        max-width: 55.9375rem;
+        flex-shrink: 0;
+        aspect-ratio: 895 / 557;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        @include mobile {
+            padding: 0 15px;
+        }
+    }
+}
