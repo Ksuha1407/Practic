@@ -1,0 +1,24 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 76.875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin: 0 auto;
+}
