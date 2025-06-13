@@ -1,0 +1,105 @@
+@use "index" as *;
+
+.store {
+    margin-block-end: 6.375rem;
+
+    @include mobile {
+        margin-block-end: 3rem;
+    }
+
+    // .store__content
+
+    &__content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5.75rem;
+
+        @include mobile {
+            gap: 2rem;
+        }
+    }
+
+    // .store__title
+
+    &__title {
+        @include title;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    // .store__section-one
+
+    &__section-one {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    // .store__cards
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.375rem;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .store__section-second
+
+}
+
+
+.subtitle {
+    @include subtitle;
+
+    @include mobile {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    // .product-card__image
+
+    &__image {
+        max-width: 22.75rem;
+        flex-shrink: 0;
+        aspect-ratio: 364 / 190;
+        object-fit: cover;
+    }
+
+    // .product-card__headline
+
+    &__headline {
+        color: #121212;
+        font-weight: 500;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.4375rem;
+
+        p {
+            color: #666;
+            font-size: 0.875rem;
+        }
+    }
+}
