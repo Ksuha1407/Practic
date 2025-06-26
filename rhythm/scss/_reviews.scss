@@ -1,0 +1,217 @@
+@use 'index' as *;
+
+.reviews {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    @include tablet_b {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include tablet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    // .reviews__title
+
+    &__title {
+        @include title;
+        margin-bottom: 6.25rem;
+
+        @include tablet_b {
+            margin-bottom: 50px;
+        }
+
+        @include tablet {
+            font-size: 2.375rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .reviews__swiper
+
+    &__swiper {
+        position: relative;
+
+        @include laptop {
+            margin-left: -15px;
+        }
+    }
+}
+
+.swiper-reviews {
+
+
+
+    // .swiper-reviews__pagination
+
+    &__pagination.swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        transform: translate(0px, -100%);
+
+        gap: 12px;
+
+        @include tablet_b {
+            position: relative;
+            bottom: 0;
+            justify-content: center;
+            transform: translate(0px, 0px);
+            padding-top: 20px;
+        }
+    }
+
+
+
+    .slide-swiper-reviews {
+        display: flex;
+
+        @include tablet_b {
+            flex-direction: column;
+        }
+
+
+        &__picture {
+            flex: 0 1 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            @include tablet_b {
+                margin-bottom: 25px;
+            }
+        }
+
+
+        // .slide-swiper-reviews__image
+        &__image {
+            width: 326px;
+            height: 341px;
+            position: relative;
+
+            @include mobile {
+                width: 270px;
+                height: 270px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 17%;
+                left: -21%;
+                width: 285px;
+                height: 257px;
+                transform: rotate(-7.724deg);
+                border-radius: 40px 0px 400px 400px;
+                background: #FF6428;
+
+                @include mobile {
+                    width: 225px;
+                    height: 187px;
+                }
+            }
+
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: center;
+
+
+            }
+        }
+
+        // .slide-swiper-reviews__body
+
+        &__body {
+            flex: 0 1 50%;
+
+            @include tablet_b {
+                padding-left: 15px;
+            }
+
+        }
+
+        // .slide-swiper-reviews__text
+
+        &__text {
+            font-size: 1.5rem;
+            line-height: 1.6;
+
+            @include mobile {
+                font-size: 18px;
+            }
+
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 56px;
+
+                @include mobile {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+
+
+        // .slide-swiper-reviews__name
+
+        &__name {
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.6;
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+
+        // .slide-swiper-reviews__position
+
+        &__position {
+            color: #868686;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    flex: 0 0 10px;
+    height: 16px;
+    border-radius: 20px;
+    background: #C4C4C4;
+    transition: all 0.3s ease 0s;
+}
+
+.swiper-pagination-bullet-active {
+    flex: 0 0 12px;
+    height: 24px;
+    transform: rotate(-90deg);
+    border-radius: 20px;
+    background: #FF6428;
+}
