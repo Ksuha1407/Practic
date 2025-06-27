@@ -1,0 +1,115 @@
+@use 'index' as *;
+
+.why {
+    background: #121212;
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+
+    @include tablet_b {
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+    }
+
+    @include tablet {
+        padding-top: 1.875rem;
+        padding-bottom: 1.25rem;
+    }
+
+    // .why__container
+
+    &__container {
+        max-width: 91.875rem;
+    }
+
+    // .why__title
+
+    &__title {
+        @include title;
+        color: #fff;
+        margin-bottom: 4.6875rem;
+
+        @include tablet_b {
+            margin-bottom: 2.5rem;
+        }
+
+        @include tablet {
+            font-size: 2.375rem;
+            margin-bottom: 1.5625rem;
+        }
+    }
+
+    // .why__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        gap: 1.875rem;
+
+        @include tablet_b {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, auto);
+            row-gap: 1.25rem;
+        }
+    }
+
+}
+
+.item-why {
+    display: grid;
+    justify-items: center;
+    padding: 2.5rem;
+    text-align: center;
+
+    @include tablet {
+        padding: 1.25rem;
+    }
+
+    // .item-why__icon
+
+    &__icon {
+        border-radius: 1.25rem;
+        background: #262626;
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    // .item-why__title
+
+    &__title {
+        color: #FFF;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    // .item-why__text
+
+    &__text {
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: capitalize;
+    }
+}

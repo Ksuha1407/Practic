@@ -1,0 +1,140 @@
+@use 'index' as *;
+
+.store {
+    padding-top: 5.375rem;
+    padding-bottom: 5.625rem;
+
+
+    @include tablet_b {
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+    }
+
+    @include tablet {
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+
+
+    // .store__title
+
+    &__title {
+        @include title;
+        margin-bottom: 5.375rem;
+
+        @include tablet_b {
+            margin-bottom: 3.125rem;
+        }
+
+        @include tablet {
+            font-size: 2.375rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+
+}
+
+.body-store {
+    &:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+
+    // .body-store__header
+
+    &__header {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.9375rem;
+    }
+
+    // .body-store__subtitle
+
+    &__subtitle {
+        color: #121212;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    // .body-store__all
+
+    &__all {
+        color: #868686;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.5;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .body-store__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.375rem;
+
+        @include tablet_b {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+}
+
+.item {
+    display: grid;
+
+    // .item__image
+
+    &__image {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+
+            @include tablet {
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+    // .item__title
+
+    &__title {
+        color: #121212;
+        font-weight: 500;
+        line-height: 1.5;
+        justify-self: start;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    // .item__prise
+
+    &__prise {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
